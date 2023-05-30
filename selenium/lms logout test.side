@@ -1,0 +1,126 @@
+{
+  "id": "c1df564d-6e7d-4ff3-a8a0-3f565ac505bf",
+  "version": "2.0",
+  "name": "lms login test",
+  "url": "http://nw.lms.kdu.ac.lk",
+  "tests": [{
+    "id": "380f849b-cabd-4dff-9ff9-0c0f046f37ff",
+    "name": "log out",
+    "commands": [{
+      "id": "c5639766-227c-4307-9d6d-68c9149017b9",
+      "comment": "",
+      "command": "open",
+      "target": "/lms/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40bdc7e4-da7e-45bd-a1e9-e4f9ff6f525e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6778eb56-7617-4908-be6d-c899497c532b",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454f1a8dc54b2",
+      "targets": [
+        ["id=single_button6454f1a8dc54b2", "id"],
+        ["css=#single_button6454f1a8dc54b2", "css:finder"],
+        ["xpath=//button[@id='single_button6454f1a8dc54b2']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "234efaac-3005-4836-84a7-00aaa7a5a2a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cc7c999-74cc-4b90-997c-edfdd58c9580",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683288493599_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "37-cs-5970@kdu.ac.lk"
+    }, {
+      "id": "8922efbb-b87c-43b1-bb64-66078d6efeb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "14255@Dhanushka"
+    }, {
+      "id": "8e0bed98-5685-450a-9365-4d5fbfbe5db6",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d7a06c-755d-4692-a717-21278235f330",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-6",
+      "targets": [
+        ["id=actionmenuaction-6", "id"],
+        ["css=#actionmenuaction-6", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-6']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[6]/span", "xpath:idRelative"],
+        ["xpath=//a[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c313549-e3ea-4854-a62e-8ad4da67426a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "69604b0e-927f-4f6e-84b2-97e9128b199c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["380f849b-cabd-4dff-9ff9-0c0f046f37ff"]
+  }],
+  "urls": ["http://nw.lms.kdu.ac.lk/"],
+  "plugins": []
+}

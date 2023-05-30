@@ -1,0 +1,391 @@
+{
+  "id": "c49b7659-a4b5-4bf6-a8ec-37c9127b4b11",
+  "version": "2.0",
+  "name": "lms login test",
+  "url": "http://nw.lms.kdu.ac.lk",
+  "tests": [{
+    "id": "3592acf5-5474-4c1f-b2c9-095374cfe5e0",
+    "name": "enroll",
+    "commands": [{
+      "id": "479771a2-6082-4fb9-939d-b449452ca79b",
+      "comment": "",
+      "command": "open",
+      "target": "/lms/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4baffc8-f7fa-471d-9c03-23121d4c3677",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf47f492-9757-4e69-b0d5-3354343e9e7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1270c7b2-d378-45a2-a219-67f4b0d981c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683290775395_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "37-cs-5970@kdu.ac.lk"
+    }, {
+      "id": "ae996daa-9d73-4ff5-ad43-27fb310e77b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "14255@Dhanushka"
+    }, {
+      "id": "34009070-5274-43ef-8498-11f8818056a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b610c4-1450-4bf7-896c-9115158f2d56",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .media-body",
+      "targets": [
+        ["css=li:nth-child(2) .media-body", "css:finder"],
+        ["xpath=//div[@id='nav-drawer']/nav/ul/li[2]/a/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Site home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34b4929e-5349-4ad8-85f3-e9e12bfcbc62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All courses",
+      "targets": [
+        ["linkText=All courses", "linkText"],
+        ["css=.footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All courses')]", "xpath:link"],
+        ["xpath=//section[@id='inst41']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php']", "xpath:href"],
+        ["xpath=//aside/section/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba2e4e49-f311-4fa2-906e-3fc9ab93b1fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Faculty of Computing",
+      "targets": [
+        ["linkText=Faculty of Computing", "linkText"],
+        ["css=.category:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Faculty of Computing')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/div/div[2]/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php?categoryid=3']", "xpath:href"],
+        ["xpath=//div[2]/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Faculty of Computing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae41df69-5fc0-4292-83bf-20b6054402ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Department of Computer Science",
+      "targets": [
+        ["linkText=Department of Computer Science", "linkText"],
+        ["css=.category:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Department of Computer Science')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div[2]/div/div[3]/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php?categoryid=10']", "xpath:href"],
+        ["xpath=//div[3]/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Department of Computer Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e02f3f81-3ed4-4d05-b52e-fb3214628959",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BSc (Hons) in Computer Science Degree Programme",
+      "targets": [
+        ["linkText=BSc (Hons) in Computer Science Degree Programme", "linkText"],
+        ["css=.category:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'BSc (Hons) in Computer Science Degree Programme')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div[2]/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php?categoryid=300']", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BSc (Hons) in Computer Science Degree Programme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced3fbd4-92cb-4d16-85be-bf5ddaf54422",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=4th Year",
+      "targets": [
+        ["linkText=4th Year", "linkText"],
+        ["css=.category:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'4th Year')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div[2]/div/div[4]/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php?categoryid=305']", "xpath:href"],
+        ["xpath=//div[4]/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'4th Year')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "309479a1-8dc2-4883-9986-0ac7b724afc8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Semester 1",
+      "targets": [
+        ["linkText=Semester 1", "linkText"],
+        ["css=.category:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Semester 1')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div[2]/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/index.php?categoryid=316']", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Semester 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d8de78e-c00f-4b58-8b14-7799d86146b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Complex Systems and Agent Technology",
+      "targets": [
+        ["linkText=Complex Systems and Agent Technology", "linkText"],
+        ["css=.coursebox:nth-child(7) > .info a", "css:finder"],
+        ["xpath=//a[contains(text(),'Complex Systems and Agent Technology')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/div[7]/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/course/view.php?id=1063']", "xpath:href"],
+        ["xpath=//div[7]/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Complex Systems and Agent Technology')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fc31e6e-6090-4535-abd3-79f9d0d327d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=enrolpassword_3186",
+      "targets": [
+        ["id=enrolpassword_3186", "id"],
+        ["name=enrolpassword", "name"],
+        ["xpath=//input[@id='enrolpassword_3186']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683290822965_67']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "877042c5-ca70-4b4b-8fe1-94f43a15eb1d",
+      "comment": "",
+      "command": "type",
+      "target": "id=enrolpassword_3186",
+      "targets": [
+        ["id=enrolpassword_3186", "id"],
+        ["name=enrolpassword", "name"],
+        ["xpath=//input[@id='enrolpassword_3186']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683290822965_67']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "CS4042"
+    }, {
+      "id": "69831733-a2ec-40c2-b26c-6069b463e31d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683290822965_74']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f654e40a-8ecc-486b-a5a2-0ac980db39b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unenrol me from CS4042",
+      "targets": [
+        ["linkText=Unenrol me from CS4042", "linkText"],
+        ["css=.leaf > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Unenrol me from CS4042')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='random6454fad1404e627_group']/li/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://nw.lms.kdu.ac.lk/lms/enrol/self/unenrolself.php?enrolid=3186'])[2]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/ul/li/p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "885d5588-e6a5-4fe0-8e16-3d996f7a649b",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454fad872a2b13",
+      "targets": [
+        ["id=single_button6454fad872a2b13", "id"],
+        ["css=#single_button6454fad872a2b13", "css:finder"],
+        ["xpath=//button[@id='single_button6454fad872a2b13']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cc0cfa9-f3a4-444b-b810-ab40054e6d3a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=li:nth-child(1) > .list-group-item", "css:finder"],
+        ["xpath=//div[@id='nav-drawer']/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://nw.lms.kdu.ac.lk/lms/my/'])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5bf07f7-7f0f-4015-94c8-a56afb4d7a70",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=li:nth-child(1) > .list-group-item", "css:finder"],
+        ["xpath=//div[@id='nav-drawer']/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://nw.lms.kdu.ac.lk/lms/my/'])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5191d3a0-96cd-41b1-badd-4fae48066232",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-818-17 .multiline",
+      "targets": [
+        ["css=#course-info-container-818-17 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-818-17']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/a/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8b6eccc-f40e-4398-94c3-eddd8c91effa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,600)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35089be3-a0a2-4d4f-a324-1b9bd7df01b1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1331)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26bff5b1-ae75-43ae-ace7-318eebfdfb19",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unenrol me from CS3142",
+      "targets": [
+        ["linkText=Unenrol me from CS3142", "linkText"],
+        ["css=.leaf > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Unenrol me from CS3142')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='random6454faf94af5c28_group']/li/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://nw.lms.kdu.ac.lk/lms/enrol/self/unenrolself.php?enrolid=2451'])[2]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/ul/li/p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d41a2f7-c858-4738-b3c6-50d34c670dd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454fb087e59a13",
+      "targets": [
+        ["id=single_button6454fb087e59a13", "id"],
+        ["css=#single_button6454fb087e59a13", "css:finder"],
+        ["xpath=//button[@id='single_button6454fb087e59a13']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cfc513b-3e34-4548-b0d1-be6c9edd21f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["linkText=Pramodh Lahiru", "linkText"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0f09a4-4da8-4992-9fba-c936b605136b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.menu-action:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[6]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/login/logout.php?sesskey=Ah0CNUN3ds']", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,' Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03abc209-cfe8-487f-a69c-d5a43df941a4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c686702f-ca7e-4d0f-ab35-85a5adac21be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3592acf5-5474-4c1f-b2c9-095374cfe5e0"]
+  }],
+  "urls": ["http://nw.lms.kdu.ac.lk/"],
+  "plugins": []
+}

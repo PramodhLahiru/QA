@@ -1,0 +1,282 @@
+{
+  "id": "af90bbf5-c806-41a6-aaab-11eece9bf3e7",
+  "version": "2.0",
+  "name": "lms login test",
+  "url": "http://nw.lms.kdu.ac.lk",
+  "tests": [{
+    "id": "765bccbd-7b95-4738-955d-508a273ea853",
+    "name": "submission",
+    "commands": [{
+      "id": "474f9b80-e5e8-410a-a2b7-ea258184ffa0",
+      "comment": "",
+      "command": "open",
+      "target": "/lms/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41892e08-a381-4080-82c3-0e4e29221bcb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44635042-c036-4a40-87e3-7056f9945155",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c5eb21-fd77-419f-a361-debba7ea2a1c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683289226534_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "37-cs-5970@kdu.ac.lk"
+    }, {
+      "id": "485365a1-0f4f-4f64-b349-6c5df65401bb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "14255@Dhanushka"
+    }, {
+      "id": "248ca11a-d487-4d8f-8509-82674b02f791",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ffbea0-5aed-48f1-9f59-023281c5d988",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,156)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11db71db-5a45-4abc-b021-1556be7ad9f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21779739-9693-460c-88db-38cf0a7b66e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-1070-17 .multiline",
+      "targets": [
+        ["css=#course-info-container-1070-17 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-1070-17']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//div[44]/div/div/div/a/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0b8fd6-f191-4b47-a9d0-27efae128eba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#module-26517 .instancename",
+      "targets": [
+        ["css=#module-26517 .instancename", "css:finder"],
+        ["xpath=//li[@id='module-26517']/div/div/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[17]/div[3]/ul/li[3]/div/div/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3b0fe66-ee2d-4b1f-a98f-0c6b82345b3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454f4bf1e6d815",
+      "targets": [
+        ["id=single_button6454f4bf1e6d815", "id"],
+        ["css=#single_button6454f4bf1e6d815", "css:finder"],
+        ["xpath=//button[@id='single_button6454f4bf1e6d815']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div[2]/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e22b70-c218-44e0-b8db-a646bcd7cc86",
+      "comment": "",
+      "command": "click",
+      "target": "css=#yui_3_17_2_1_1683289287475_334 > .icon",
+      "targets": [
+        ["css=#yui_3_17_2_1_1683289287475_334 > .icon", "css:finder"],
+        ["xpath=//a[@id='yui_3_17_2_1_1683289287475_334']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8d278dc-206c-4a51-b6e3-54b3cee7f5b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_17_2_1_1683289287475_722",
+      "targets": [
+        ["id=yui_3_17_2_1_1683289287475_722", "id"],
+        ["css=#yui_3_17_2_1_1683289287475_722", "css:finder"],
+        ["xpath=//span[@id='yui_3_17_2_1_1683289287475_722']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_17_2_1_1683289287475_723']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a4f58d0-8c4f-4741-a33d-9309bae10fa6",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_17_2_1_1683289287475_745",
+      "targets": [
+        ["id=yui_3_17_2_1_1683289287475_745", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_17_2_1_1683289287475_745", "css:finder"],
+        ["xpath=//input[@id='yui_3_17_2_1_1683289287475_745']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683289287475_776']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e322ca8f-e726-458c-a666-472b715889d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=yui_3_17_2_1_1683289287475_745",
+      "targets": [
+        ["id=yui_3_17_2_1_1683289287475_745", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_17_2_1_1683289287475_745", "css:finder"],
+        ["xpath=//input[@id='yui_3_17_2_1_1683289287475_745']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683289287475_776']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\lms forget.side"
+    }, {
+      "id": "f80fd70c-052e-4eaf-a0b6-0e1a03f3dbf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=yui_3_17_2_1_1683289287475_786",
+      "targets": [
+        ["id=yui_3_17_2_1_1683289287475_786", "id"],
+        ["css=#yui_3_17_2_1_1683289287475_786", "css:finder"],
+        ["xpath=//button[@id='yui_3_17_2_1_1683289287475_786']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683289287475_787']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72bd817-f7e1-4cc7-ac31-01aab3172b7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1683289287475_830']/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74aefd01-5cad-43b7-8878-91060118083e",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454f4f25140c18",
+      "targets": [
+        ["id=single_button6454f4f25140c18", "id"],
+        ["css=#single_button6454f4f25140c18", "css:finder"],
+        ["xpath=//button[@id='single_button6454f4f25140c18']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div[2]/div[2]/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2704a9a7-d332-4f58-aa55-11a46a841073",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454f4fcce42814",
+      "targets": [
+        ["id=single_button6454f4fcce42814", "id"],
+        ["css=#single_button6454f4fcce42814", "css:finder"],
+        ["xpath=//button[@id='single_button6454f4fcce42814']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a75bd25-68b1-4448-9826-1056809d62f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=single_button6454f50595f8815",
+      "targets": [
+        ["id=single_button6454f50595f8815", "id"],
+        ["css=#single_button6454f50595f8815", "css:finder"],
+        ["xpath=//button[@id='single_button6454f50595f8815']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div[2]/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1ed65f2-a276-499e-9826-bab59636a77d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_cancel",
+      "targets": [
+        ["id=id_cancel", "id"],
+        ["name=cancel", "name"],
+        ["css=#id_cancel", "css:finder"],
+        ["xpath=//input[@id='id_cancel']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1683289361071_334']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8fba8a1c-6413-40ae-9222-13d90370d0a8",
+    "name": "submission1",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "429b2b82-b0b1-4e09-9511-2d081bb036c6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["765bccbd-7b95-4738-955d-508a273ea853"]
+  }],
+  "urls": ["http://nw.lms.kdu.ac.lk/"],
+  "plugins": []
+}

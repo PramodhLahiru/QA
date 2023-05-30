@@ -1,0 +1,239 @@
+{
+  "id": "ae49c3e4-09cd-4197-8ca9-378bc15c68ed",
+  "version": "2.0",
+  "name": "lms login test",
+  "url": "http://nw.lms.kdu.ac.lk",
+  "tests": [{
+    "id": "9e1aaca0-e9d6-4719-a0de-aa47bd9da9f0",
+    "name": "profile",
+    "commands": [{
+      "id": "0c92f349-d98d-4d1c-acc4-bea5bcfeeb70",
+      "comment": "",
+      "command": "open",
+      "target": "/lms/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f192fd33-a154-4826-a7a8-037db213caed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1050",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1da5eafd-784c-4de8-a02f-6e6fed22af97",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b310987a-033e-4c59-8029-c027a461778c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683291886249_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "37-cs-5970@kdu.ac.lk"
+    }, {
+      "id": "8d69fe9a-dd3d-40b6-8a5f-3aaada73a9e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "14255@Dhanushka"
+    }, {
+      "id": "a8d240aa-d58a-491c-a393-851aeb53da6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b46e2ab1-7567-4879-bf16-4045c58b9d7c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["linkText=Pramodh Lahiru", "linkText"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a8f3a03-8616-41b0-8d4f-2fa3ccd058be",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["linkText=Pramodh Lahiru", "linkText"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fae3334-be1e-4acf-8dba-e63eedc3270d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["linkText=Pramodh Lahiru", "linkText"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1683291895166_104']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0321f3f-29fc-4313-9ff6-0fff7e54f802",
+      "comment": "",
+      "command": "click",
+      "target": "id=actionmenuaction-2",
+      "targets": [
+        ["id=actionmenuaction-2", "id"],
+        ["css=#actionmenuaction-2", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-2']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0244658-6551-4497-a205-8eccae94ad9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit profile",
+      "targets": [
+        ["linkText=Edit profile", "linkText"],
+        ["css=.editprofile a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit profile')])[2]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div/section/ul/li/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/user/edit.php?id=2240&returnto=profile']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28829048-b861-45cf-9038-d6d7fad85c82",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba355e66-a6ed-405a-a066-913571ab26f9",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=#page-user-edit > div:nth-child(1)",
+      "targets": [
+        ["css=#page-user-edit > div:nth-child(1)", "css:finder"],
+        ["xpath=//body[@id='page-user-edit']/div", "xpath:idRelative"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "1 <p>1</p>"
+    }, {
+      "id": "5a7013d3-6f51-41fb-8464-ea521b048dbd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08648804-a9fd-4929-8305-c24f3d4a5305",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1683291911972_774']/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced9711b-08f2-4c67-af21-a0dfd1206c41",
+      "comment": "",
+      "command": "click",
+      "target": "id=action-menu-toggle-1",
+      "targets": [
+        ["id=action-menu-toggle-1", "id"],
+        ["linkText=Pramodh Lahiru", "linkText"],
+        ["css=#action-menu-toggle-1", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-1']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-1-menubar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23206138-23af-4b13-822c-8878aafab8f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.menu-action:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='action-menu-1-menu']/a[6]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nw.lms.kdu.ac.lk/lms/login/logout.php?sesskey=4LrdPqVUjd']", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,' Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a768110-aaf6-47b9-b850-67e742a67a2a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ca7abe62-016e-480d-962e-ed1c6d063ac0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e1aaca0-e9d6-4719-a0de-aa47bd9da9f0"]
+  }],
+  "urls": ["http://nw.lms.kdu.ac.lk/"],
+  "plugins": []
+}
